@@ -8,44 +8,74 @@ const questions = [
     {
         type: "input",
         message: "What is the project name?",
-        name: "name"
+        name: "title"
     },
     {
         type: "input",
-        message: "Enter a DESCRIPTION line or enter nothing to continue to the next section",
+        message: "Enter the DESCRIPTION or enter nothing to print N/A",
         name: "description"
     },
     {
         type: "input",
-        message: "Enter a INSTALLATION INSTRUCTION line or enter nothing to continue to the next section",
+        message: "Enter the INSTALLATIONS or enter nothing to print N/A",
         name: "installation"
     },
     {
         type: "input",
-        message: "Enter a USAGE INSTRUCTION line or enter nothing to continue to the next section",
+        message: "Enter the USAGE instructions or enter nothing to print N/A",
         name: "usage"
     },
     {
         type: "input",
-        message: "Enter a CONTRIBUTION GUIDELINE or enter nothing to continue to the next section",
+        message: "Enter the CONTRIBUTION guidelines or enter nothing to print N/A",
         name: "contribution"
     },
     {
         type: "input",
-        message: "Enter a TEST INSTRUCTION or enter nothing to continue to the next section",
+        message: "Enter a TEST instructions or enter nothing to print N/A",
         name: "test"
     },
-    
+
 
 ];
+const fileName = "README.md";
 
 
 //FUNCTIONS ================================================================================
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => err ? console.log(err):0);
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    
+    inquirer.prompt(questions).then((response) =>{
+        let text = 
+`# ${response.title}
+        
+## Description
+${response.description}
+
+## Installation
+${response.installation}
+
+## Usage
+${response.usage}
+
+## Contribution
+${response.contribution}
+
+## Test
+${response.text}
+
+`
+        writeToFile(fileName, text);
+
+
+    });
+    
+}
 
 //USER INTERACTIONS ========================================================================
 
