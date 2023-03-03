@@ -14,10 +14,10 @@ Using this application, we are capable of creating a read me by just simply ente
 - [Tests](#tests)
 
 ## Installation
-To run the application you are required to have fs and inquirer installed.
+In order to run this application you need to have 'fs' and 'inquirer' libraries installed.
 
 ## Usage
-To use the application you need to run the index.js file which is located inside the 'Develop' folder.
+To use this application you need to run the index.js file inside of the 'Develop' folder 
 
 ## License 
 [MIT License](http://choosealicense.com/licenses/mit/) 
@@ -26,5 +26,5 @@ To use the application you need to run the index.js file which is located inside
 N/A
 
 ## Test
-undefined
+N/A
 

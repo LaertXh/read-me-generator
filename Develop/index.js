@@ -134,7 +134,6 @@ ${response.description}
 
 - [Installation](#installation)
 - [Usage](#usage)${generateMarkdown.navigationLicenseSection(response.license)}
-- [Badges](#badges)
 - [Contribution](#contribution)
 - [Tests](#tests)
 
