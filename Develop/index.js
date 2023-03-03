@@ -148,7 +148,7 @@ ${generateMarkdown.renderLicenseSection(response.license)} ${generateMarkdown.re
 ${response.contribution}
 
 ## Test
-${response.text}
+${response.test}
 
 `
         writeToFile(fileName, text);

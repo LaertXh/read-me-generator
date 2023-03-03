@@ -1,8 +1,8 @@
-# f
-[![License](https://img.shields.io/badge/License-LGPL_3.0-blue.svg)](http://choosealicense.com/licenses/lgpl-3.0/) 
+# Read Me Generator
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](http://choosealicense.com/licenses/mit/) 
 
 ## Description
-f
+Using this application, we are capable of creating a read me by just simply entering the appropriate texts on the appropriate fields. The application will handle any formatting necessary. When selecting a license, a badge for that license will be added to the top of the ReadMe.
 
 ## Table of Contents
 
@@ -14,16 +14,16 @@ f
 - [Tests](#tests)
 
 ## Installation
-f
+To run the application you are required to have fs and inquirer installed.
 
 ## Usage
-f
+To use the application you need to run the index.js file which is located inside the 'Develop' folder.
 
 ## License 
-[GNU Lesser General Public License v3.0](http://choosealicense.com/licenses/lgpl-3.0/) 
+[MIT License](http://choosealicense.com/licenses/mit/) 
 
 ## Contribution
-f
+N/A
 
 ## Test
 undefined
