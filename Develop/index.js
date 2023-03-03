@@ -12,17 +12,17 @@ const questions = [
     },
     {
         type: "input",
-        message: "Enter the DESCRIPTION or enter nothing to print N/A",
+        message: "Enter the DESCRIPTION",
         name: "description"
     },
     {
         type: "input",
-        message: "Enter the INSTALLATIONS or enter nothing to print N/A",
+        message: "Enter the INSTALLATION instructions",
         name: "installation"
     },
     {
         type: "input",
-        message: "Enter the USAGE instructions or enter nothing to print N/A",
+        message: "Enter the USAGE instructions",
         name: "usage"
     },
     {
@@ -62,12 +62,12 @@ const questions = [
     },
     {
         type: "input",
-        message: "Enter the CONTRIBUTION guidelines or enter nothing to print N/A",
+        message: "Enter the CONTRIBUTION guidelines",
         name: "contribution"
     },
     {
         type: "input",
-        message: "Enter a TEST instructions or enter nothing to print N/A",
+        message: "Enter a TEST instructions",
         name: "test"
     }
 
@@ -133,8 +133,7 @@ ${response.description}
 ## Table of Contents
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
+- [Usage](#usage)${generateMarkdown.navigationLicenseSection(response.license)}
 - [Badges](#badges)
 - [Contribution](#contribution)
 - [Tests](#tests)
@@ -144,10 +143,7 @@ ${response.installation}
 
 ## Usage
 ${response.usage}
-
-${generateMarkdown.renderLicenseSection(response.license)}
-[${response.license}](${generateMarkdown.renderLicenseLink(badge[response.license].url)})
-
+${generateMarkdown.renderLicenseSection(response.license)} ${generateMarkdown.renderLicenseLink(response.license, badge[response.license].url)}
 ## Contribution
 ${response.contribution}
 

@@ -7,9 +7,9 @@ function renderLicenseBadge(badge, url) {
 }
 
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseLink(license, url) {
   if(license !== "N/A"){
-    return `http://choosealicense.com/licenses/${license}/ \n`
+    return `\n[${license}](http://choosealicense.com/licenses/${url}/) \n`
   }
   return ""
 }
@@ -21,10 +21,18 @@ function renderLicenseSection(license) {
   }
   return ""
 }
+//for the navigation
+function navigationLicenseSection(license) {
+  if(license !== "N/A"){
+    return "\n- [License](#license)"
+  }
+  return ""
+}
 
 
 module.exports = {
   renderLicenseBadge,
   renderLicenseLink,
-  renderLicenseSection
+  renderLicenseSection,
+  navigationLicenseSection
 };
