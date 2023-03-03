@@ -9,7 +9,6 @@ Using this application, we are capable of creating a read me by just simply ente
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Badges](#badges)
 - [Contribution](#contribution)
 - [Tests](#tests)
 
