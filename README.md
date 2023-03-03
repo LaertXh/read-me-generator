@@ -17,6 +17,7 @@ In order to run this application you need to have 'fs' and 'inquirer' libraries 
 
 ## Usage
 To use this application you need to run the index.js file inside of the 'Develop' folder 
+Video walkthrough of the application is shown here: https://drive.google.com/file/d/1dxyiHNEVuin3Tuvk5W9UJqtUoNvBgJmB/view
 
 ## License 
 [MIT License](http://choosealicense.com/licenses/mit/) 
